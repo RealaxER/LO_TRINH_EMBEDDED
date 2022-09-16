@@ -32,7 +32,12 @@ example : ứng dụng thư viện cho các bt đã làm
 BTVN : xây dưng thêm cho các hàm chức năng của Lib Button, hàm Tooggle , write_pin
 - Các ngoại vi khác cũng vậy cứ học xong thì bắt phải xây dựng thư viện cho ngoại vi đó
 
-- INTERRUPT) : (món này 2 buổi)
+-Buổi 6(INTERRUP) : Thế nào là interrup,interrup của hệ thống khác gì interrup hardware,sử dụng nút nhấn với interrup
+Example : sử dụng nút nhấm với interrup điều khiển led
+BTVN : xây dựng thư viện cho nó các hàm yêu cầu (interrup_init() : gọi trong hàm main gọi là thanh ghi interrup đã được config )
+
+-Buổi 7 :(ADC) : Thế nào adc, adc của các vi điều khiển của các thanh ghi khác sẽ như thế nào , thế nào analog thế nào là digital ,hiểu được adc và cách tính toán các 
+giá trị của vi điều khiển trả về khi đọc giá trị adc
 
 - ADC(món này 2 buổi)
 
