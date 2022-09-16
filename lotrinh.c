@@ -72,12 +72,11 @@ Số ban đầu hiện thị là 1000
 
 -Buổi 11 :(TIMER) : CTC mode timer ,ứng dụng của nó và so sánh với các chế độ cũ giới thiệu về PWM là gì 
 Example : PWM sáng tắt đèn led , pwm điều khiển động cơ
-BTVN : Sử dụng 1 nút nhấm với 2 đèn 
-
+BTVN : Sử dụng 1 nút nhấm với 2 đèn nhấn giữ thì giảm ánh sáng đèn hoặc tăng ánh sáng dựa vào , ấn nút thì đèn tắt hoặc chuyển đèn khác , xây dựng thư viện pwm
 
 - Đồ án : LCD hiển thị giá trị nhiệt độ và điện áp ấn nút thì đọc nhiệt độ or điện áp (ở đây các bạn có thể đem con này và con sau này đi thi trên trường cũng được rồi)
 
-- Đồ án  tự đăng kí : Xe dò line
+- Đồ án  tự đăng kí : Xe dò line, và xe tránh vật cản dùng cảm biến siêu âm
 
 ==== GIAO THỨC TRUYỀN THÔNG ====
 - UART(3 buổi)
