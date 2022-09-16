@@ -32,20 +32,50 @@ example : ứng dụng thư viện cho các bt đã làm
 BTVN : xây dưng thêm cho các hàm chức năng của Lib Button, hàm Tooggle , write_pin
 - Các ngoại vi khác cũng vậy cứ học xong thì bắt phải xây dựng thư viện cho ngoại vi đó
 
--Buổi 6(INTERRUP) : Thế nào là interrup,interrup của hệ thống khác gì interrup hardware,sử dụng nút nhấn với interrup
+-Buổi 6(INTERRUP) : Chữa bài,Thế nào là interrup,interrup của hệ thống khác gì interrup hardware,sử dụng nút nhấn với interrup
 Example : sử dụng nút nhấm với interrup điều khiển led
-BTVN : xây dựng thư viện cho nó các hàm yêu cầu (interrup_init() : gọi trong hàm main gọi là thanh ghi interrup đã được config )
+BTVN : xây dựng thư viện cho nó các hàm yêu cầu (interrup_init() : gọi trong hàm main gọi là thanh ghi interrup đã được config )...
 
--Buổi 7 :(ADC) : Thế nào adc, adc của các vi điều khiển của các thanh ghi khác sẽ như thế nào , thế nào analog thế nào là digital ,hiểu được adc và cách tính toán các 
+-Buổi 7 :(ADC) : Chữa bài,Thế nào adc, adc của các vi điều khiển của các thanh ghi khác sẽ như thế nào , thế nào analog thế nào là digital ,hiểu được adc và cách tính toán các 
 giá trị của vi điều khiển trả về khi đọc giá trị adc
+Example : đọc giá trị adc hiển thị lên led 7 thanh , 
+BTVN : Sử dụng 1 biến trở để điều chỉnh điện áp thay đổi từ 0-5V. Sử dụng chức năng ADC của vi điều khiển để đo điện áp, hiển thị giá trị lên LED 7 thanh. Sử dụng 1 
+nút bấm: nếu ấn nút lần thứ nhất thì LED hiển thị điện áp với 1 chữ số thập phân, nếu ấn nút lần thứ 2 thì LED hiển thị điện áp với 2 chữ số thập phân....
 
-- ADC(món này 2 buổi)
+-Buổi 8(ADC) :Chưa bài, Đọc adc đa kênh , đọc nhiều kênh cùng lúc , adc kết hợp cùng interrupt
+Example : Đọc cùng lúc 2 kênh adc đo biến trở hiển thị led 7 thanh
+BTVN :  *Bài 1 Lập trình sử dụng chức năng ADC để đo điện áp và nhiệt độ, hiển thị lên 2 con LED 7 thanh .Điện áp đưa vào chân ADC0, nhiệt độ đưa vào chân ADC1. -
+Sử dụng 2 nút bấm nối vào PD0 và PD1 .
+Ấn nút 1 thì LED sẽ hiển thị đo điện áp với 1 chữ số thập phân  
+Ấn nút 2 thì LED sẽ hiển thị đo nhiệt độ.
+*Bài 2 : Lập trình sử dụng chức năng ADC để đo điện áp. Có 4 đầu vào điện áp cấp vào chân ADC0,ADC1,ADC2,ADC3. Sử dụng 2 LED 7 thanh hiện thị điện áp.
+Sử dụng 4 nút bấm vào PC0,PC1,PC2,PC3. 
+Khi bấm nút 1 thì LED sẽ hiển thị điện áp ở chân ADC0, 
+Ấn nút 2 thì LED sẽ hiển thị điện áp ở chân ADC1 , 
+Ấn nút 3 thì LED sẽ hiển thị áp ở chân ADC2
+Ấn nút 4 thì LED sẽ hiển thị điện áp ở chân ADC3.
 
-- TIMER (3 buổi gì đó vì ứng dụng xây dựng hàm delay_ms)
+-Buổi 9(TIMER) : Chưa bài, thế nào timer cách tính toán timer(bộ đếm ) , timer counter normal ứng dụng của nó để viết hàm delay 
+Example : delay_ms, delay_us,GetTick();
+BTVN : xây dựng thư viện delay, đếm counter tỉmer led nháy với chu kì 1s
+
+-Buổi 10 (TIMER) : Chữa bài , Timer Input Capture Mode là gì , cách dùng timer với interrupt (ứng dụng viết hàm GetTick);
+Example : viết thư viện button với hàm GetTick;
+BTVN : tạo thư viện button với hàm GetTick; 
+Bài 2 :Thiết kế mạch sử dụng vđk atmega16 lập trình hiển 4 LED 7 thanh bằng pp quét , sử dụng 3 nút bấm nối vào PA0,PA1,PA2
+Thiết lập TIMER 0 hoạt động ở chế độ Normal , kích hoặc ngắt tràn
+Lựa chọn một tần số hoạt động cho Timer , ghi lại chú thích về cách tính toán thời gian 1(s) vào chương trình phục vụ ngắt
+Số ban đầu hiện thị là 1000
+Ấn nút 1(sau đó nhả ra) thì số hiện thị tự động tăng sau mỗi 1(s) tăng tối đa đến 9000 thì dừng lại
+Ấn nút 2(sau đó nhả ra) thì số hiện thị tự động giảm sau mỗi 1(s) tăng tối đa đến 0 thì dừng lại
+Ấn nút 3(sau đó nhả ra) thì số hiện thị tự động dừng lại ngay lập tức
+
+-Buổi 11 :(TIMER) : CTC mode timer ,ứng dụng của nó và so sánh với các chế độ cũ giới thiệu về PWM là gì 
+Example : PWM sáng tắt đèn led , pwm điều khiển động cơ
+BTVN : Sử dụng 1 nút nhấm với 2 đèn 
+
 
 - Đồ án : LCD hiển thị giá trị nhiệt độ và điện áp ấn nút thì đọc nhiệt độ or điện áp (ở đây các bạn có thể đem con này và con sau này đi thi trên trường cũng được rồi)
-
-- PWM(1 buổi) (Đây là một phân tách nhỏ của timer)
 
 - Đồ án  tự đăng kí : Xe dò line
 
