@@ -59,5 +59,6 @@ vi như trên ,
 - Giới thiệu về thằng HAL thư viện có sẵn của ST
 (thế nào là makefile  ứng dụng struct ,union trong xây dựng thư viện các ngoại vi stm32 , lập trình stm32 với tầng devie driver và application)
 .....
+Cách dùng ide visual studio code và compiler GCC để lập trình cho các vđk lõi arm khác
 
 */
