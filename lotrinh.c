@@ -51,6 +51,8 @@ BTVN : xây dưng thêm cho các hàm chức năng của Lib Button, hàm Tooggl
 - Đồ án : Giao tiếp 2 lcd và 2 con vi điều khiển thông qua i2c , tiết kiệm chi phí thì chỉ cần giao tiếp vđk với lcd sử dụng i2c
 - SPI (2 buổi) ( mô phỏng proteus giao tiêp 2 vđk)
 - Bootloader(2 buổi)
+- Đồ án kết thúc giai đoạn 1 : Đồng hồ vạn niên hiên thị giờ ngày tháng năm , nhiệt độ , độ ẩm, cảnh báo cháy ở xa với chuông bluetooth , với các nút 
+bấm và chức năng khác nhau,
 ========================GIAI ĐOẠN 2 : ADVANCDED(lập trình vđk 32bit lõi arm (STM32))============================
 - Cài đặt keilC 
 - Tải các tài liệu lq 
